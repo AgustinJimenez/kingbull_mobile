@@ -1,0 +1,20 @@
+[
+    {
+        "id": "10",
+	"titulo":"For time:50 muscle-ups",  
+        "fecha": "3/09/2014",
+	"descripcion": ""
+    },
+    {
+	"id": "11",
+	"titulo":"Joshie",  
+        "fecha": "2/09/2014",
+	"descripcion": "3 rounds for time of:40-lb. dumbbell snatches, 21 reps, right arm 21 L pull-ups 40-lb. dumbbell snatches, 21 reps, left arm 21 L Pull-ups"
+    },
+    {
+	"id": "12",
+	"titulo":"10 80-yard shuttle sprints",  
+        "fecha": "1/09/2014",
+	"descripcion": "For each sprint, run 10 yards out, 10 back, 20 out, 20 back, 10 out, 10 back."
+    }
+]

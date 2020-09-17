@@ -1,0 +1,17 @@
+[
+    {
+        "id": "10",
+	"titulo":"Lunes 26",  
+        "reservado": true
+    },
+    {
+	"id": "11",
+	"titulo":"Martes 27",  
+        "reservado": false
+    },
+    {
+	"id": "12",
+	"titulo":"Miércoles 28",  
+        "reservado": true
+    }
+]

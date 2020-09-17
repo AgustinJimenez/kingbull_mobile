@@ -1,0 +1,31 @@
+<ion-view view-title="Noticias">
+    <ion-nav-title>
+        <span style="color:white">Noticias</span>
+    </ion-nav-title>
+     <ion-content  style="background-color:#1b1425;">
+    <ion-list >
+      <ion-item ng-repeat="list in noticias"  style="background-color:#1b1425">
+        <div style="background-color: red;" class="list card grad-negro">
+            <div class="item item-body">
+                <!-- <img class="full-image" src="img/noticias{{$index}}.jpg"> -->
+                <img class="full-image" src="{{list.imagen}}">
+                <h2>{{list.titulo}}</h2>
+                <p>{{list.fecha}}</p>
+                <p>
+                {{list.contenido}}
+                </p>
+            </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll
+        ng-if="!moredata"
+        icon="ion-loading-c"
+        on-infinite="loadMoreData()"
+        distance="1%"
+        overflow-sroll="false">
+
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

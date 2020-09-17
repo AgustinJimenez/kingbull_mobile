@@ -1,0 +1,145 @@
+<ion-view view-title="usuario">
+     <ion-nav-title>
+        <span style="color:white">Usuario</span>
+    </ion-nav-title>
+<ion-content style="background-color:#1b1425">
+ <div class="list card grad-negro">
+
+     <div class="item item-body" style="padding-bottom:0px">
+        <!--<img class="full-image" src="{{perfil.foto}}">-->
+         <!-- <img class="full-image" src="img/profilec.png"> -->
+         <img class="full-image" src="{{usuario.profile_img}}">
+         <div id="footer-inside">
+            <p class="text-center footer-title">{{usuario.user.first_name}}</p>
+        </div>
+     </div>
+     <div class="item item-body" style="padding: 0px">
+       <div class = "row perfil text-center">
+          <div class = "col col1">
+               <div>
+                    <a>Género</a>
+                    <h2>{{usuario.genero}}</h2>
+                </div>
+          </div>
+          <div class = "col col2">
+               <div>
+                    <a>Edad</a>
+                    <h2>{{usuario.edad}}</h2>
+                </div>
+          </div>
+          <div class = "col col3">
+               <div>
+                <a>Altura</a>
+                <h2>{{usuario.altura}}</h2>
+               </div>
+          </div>
+          <div class = "col col4">
+               <div>
+                <a>Peso</a>
+                <h2>{{usuario.peso}}</h2>
+               </div>
+          </div>
+        </div>
+     </div>
+     <div class="item item-body text-center">
+        <h2>WORKOUTS</h2>
+        <div class="row workout">
+            <div class="col col1b">
+                <div>
+                    <a>Fran</a>
+                    <h2>{{usuario.fran}}</h2>
+                </div>
+            </div>
+            <div class="col col2b">
+                <div>
+                    <a>Helen</a>
+                    <h2>{{usuario.helen}}</h2>
+                </div>
+            </div>
+            <div class="col col3b">
+                <div>
+                    <a>Grace</a>
+                    <h2>{{usuario.grace}}</h2>
+                </div>
+            </div>
+           <div class="col col4b">
+                <div>
+                    <a>Filthy 50</a>
+                    <h2>{{usuario.filthy}}</h2>
+               </div>
+            </div>
+        </div>
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a style="font-size:13.25px">Fight Gone Bad</a>
+                    <h2>{{usuario.fight_gone_bad}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Sprint 400m</a>
+                    <h2>{{usuario.sprint}}</h2>
+                </div>
+            </div>
+        <div class="col col7b">
+                <div>
+                    <a>Run 5k</a>
+                    <h2>{{usuario.run}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <h2>MAXES</h2>
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>Clean & Jerk</a>
+                    <h2>{{usuario.clean_jerk}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Snatch</a>
+                    <h2>{{usuario.snatch}}</h2>
+                </div>
+            </div>
+        <div class="col col7b">
+                <div>
+                    <a>Deadlift</a>
+                    <h2>{{usuario.deadlift}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>Back Squat</a>
+                    <h2>{{usuario.back_squat}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Max Pull-ups</a>
+                    <h2>{{usuario.max_pull_ups}}</h2>
+                </div>
+            </div>
+        </div>
+     </div>
+
+</div>
+
+</ion-content>
+</ion-view>
+
+ <!--  <body class="padding" ng-controller="perfilCtrl">
+    <button class="button button-dark" ng-click="showPopup()">
+      show
+    </button>
+
+    <script id="popup-template.html" type="text/ng-template">
+      <input ng-model="data.wifi" type="text" placeholder="Password">
+    </script>
+  </body>
+    -->

@@ -1,0 +1,27 @@
+<ion-view view-title="WOD">
+    <ion-nav-title>
+        <span style="color:white">WOD</span>
+    </ion-nav-title>
+    <ion-content>
+        <ion-list>
+          <ion-item ng-repeat="list in wods"  style="background-color:#1b1425">
+            <div class="list card grad-negro">
+                <div class="item item-body">
+                    <img class="full-image" src="{{list.imagen}}">
+                    <h2>{{list.titulo}}</h2>
+                    <p>{{list.fecha}}</p>
+                    <p>
+                    {{list.contenido}}
+                    </p>
+                </div>
+            </div>
+          </ion-item>
+        </ion-list>
+        <ion-infinite-scroll
+            ng-if="!moredata"
+            icon="ion-loading-c"
+            on-infinite="loadMoreData()"
+            distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

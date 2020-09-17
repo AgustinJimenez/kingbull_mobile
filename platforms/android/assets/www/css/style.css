@@ -1,0 +1,296 @@
+/* Empty. Add your own CSS if you like */
+/*style="background: linear-gradient(left, #bcd9f6 0%,#0d3d57 89%,#0a2b3f 100%)"
+.bar.bar-0 .title {
+  color: white;
+}*/
+
+.grad-rojo{
+  background: rgba(239,71,58,1);
+background: -moz-linear-gradient(left, rgba(239,71,58,1) 0%, rgba(240,47,23,1) 65%, rgba(248,80,50,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(239,71,58,1)), color-stop(65%, rgba(240,47,23,1)), color-stop(100%, rgba(248,80,50,1)));
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(239,71,58,1)), color-stop(65%, rgba(240,47,23,1)), color-stop(100%, rgba(248,80,50,1)));
+background: -webkit-linear-gradient(left, rgba(239,71,58,1) 0%, rgba(240,47,23,1) 65%, rgba(248,80,50,1) 100%);
+background: -o-linear-gradient(left, rgba(239,71,58,1) 0%, rgba(240,47,23,1) 65%, rgba(248,80,50,1) 100%);
+background: -ms-linear-gradient(left, rgba(239,71,58,1) 0%, rgba(240,47,23,1) 65%, rgba(248,80,50,1) 100%);
+background: linear-gradient(to right, rgba(239,71,58,1) 0%, rgba(240,47,23,1) 65%, rgba(248,80,50,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef473a', endColorstr='#f85032', GradientType=1 ); */
+}
+
+.grad-negro{
+background: -moz-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(37,28,51,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(27,20,37,1)), color-stop(100%, rgba(37,28,51,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(37,28,51,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(37,28,51,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(37,28,51,1) 100%); /* ie10+ */
+background: linear-gradient(180deg, rgba(27,20,37,1) 0%, rgba(37,28,51,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1425', endColorstr='#251C33',GradientType=0 ); /* ie6-9 */
+}
+
+.grad-negro2{
+background: -moz-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(94,30,19,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(27,20,37,1)), color-stop(100%, rgba(94,30,19,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(94,30,19,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(94,30,19,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(270deg, rgba(27,20,37,1) 0%, rgba(94,30,19,1) 100%); /* ie10+ */
+background: linear-gradient(180deg, rgba(27,20,37,1) 0%, rgba(94,30,19,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b1425', endColorstr='#5E1E13',GradientType=0 ); /* ie6-9 */
+}
+.grad-negro .item {
+  background-color: transparent;
+  border:0px;   /*Removes all borders*/
+  border-top: 0px solid;   /*Top Border for each menu item*/
+  border-bottom:0px solid;   /*Bottom border for each menu item*/
+  border-color: #666;   /*Sets colors for top and bottom border*/
+  color: whitesmoke;    /*Text color for each item*/
+}
+
+.grad-negro .item-complex .item-content, .dark .item-radio .item-content {
+  background-color: transparent;
+}
+
+/*Just makes the type white*/
+.grad-negro h2{
+  color: white;/*Text color for each item, overrides the color property above*/
+  font-family: Oswald;
+}
+.grad-negro h3{
+  color: white;/*Text color for each item, overrides the color property above*/
+  font-size: 15px;
+  font-family: Oswald;
+  /*color:#e1314a;*/
+}
+
+.grad-negro a{
+  color:white;
+  font-size: 15px;
+  font-family: Source Sans Pro;
+}
+.grad-negro p {
+  color:white;
+  font-size: 15px;
+  font-family: Source Sans Pro;
+}
+
+.grad-negro input[type=text] {
+    background-color:whitesmoke;
+    color: black;
+}
+
+.rojo{
+    background-color: #f85032;
+}
+
+.negrob{
+    background-color: #1b1425;
+}
+
+.custom-icon {
+  font-size: 30px;
+  color : whitesmoke;
+  color:#e1314a;
+  vertical-align: middle;
+  padding: 16px;
+}
+
+.item-text-center-vertical {
+  line-height: 300%;
+}
+
+#footer-inside {
+    position:relative;
+    top: -65px;
+    background-color:red;
+    opacity: 0.8;
+    height: 45px;
+}
+
+.footer-title{
+    font-weight:bold;
+    font-size:18px;
+    color:white;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.perfil a{
+    color:darkgrey;
+    font-weight: lighter;
+
+}
+.perfil h2{
+    color:white;
+    font-weight: normal;
+    text-transform:none;
+}
+.col1 {
+    border-top: solid;
+    border-color: #B20400;
+    border-color: orangered;
+    margin-right: 10px;
+    border-width:medium;
+}
+.col2 {
+    border-top: solid;
+    border-color: #B20400;
+    border-color: orangered;
+    margin-right: 10px;
+    border-width:medium;
+}
+.col3 {
+    border-top: solid;
+    border-color: #FF1F19;
+    margin-right: 10px;
+    border-width:medium;
+
+}
+.col4 {
+    border-top: solid;
+    border-color: #FF0600;
+    border-width:medium;
+}
+
+.col1b {
+    border-top: solid;
+    border-color:red;
+    border-width:medium;
+    background-color:#130C1D;
+    border-right: solid;
+    border-right-width: thin;
+    border-right-color:#0B0513;
+}
+
+.col2b {
+    border-top: solid;
+    border-color:deepskyblue;
+    border-width:medium;
+    background-color:#130C1D;
+    border-right: solid;
+    border-right-width:thin;
+    border-right-color:#0B0513;
+}
+.col3b {
+    border-top: solid;
+    border-color:dodgerblue;
+    border-width:medium;
+    background-color:#130C1D;
+    border-right: solid;
+    border-right-width: thin;
+    border-right-color:#0B0513;
+}
+.col4b {
+    border-top: solid;
+    border-color:mediumspringgreen;
+    border-width:medium;
+    background-color:#130C1D;
+}
+
+.col5b {
+    border-top: solid;
+    border-color:red;
+    border-width:medium;
+    background-color:#130C1D;
+    border-right: solid;
+    border-right-width: thin;
+    border-right-color:#0B0513;
+}
+.col6b {
+    border-top: solid;
+    border-color:dodgerblue;
+    border-width:medium;
+    background-color:#130C1D;
+    border-right: solid;
+    border-right-width: thin;
+    border-right-color:#0B0513;
+}
+.col7b {
+    border-top: solid;
+    border-color:mediumspringgreen;
+    border-width:medium;
+    background-color:#130C1D;
+}
+.workout h2 {
+    color:white;
+    font-weight: normal;
+    text-transform:none;
+    padding-bottom: 10px;
+    }
+.workout a {
+    color:darkgray;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.workout {
+    padding-bottom: 15px;
+}
+
+.cuotas {
+    border-top: solid;
+    border-color:red;
+    border-width:medium;
+    background-color:#130C1D;
+}
+
+.botones {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.icon-title {
+    font-size: 12px;
+    font-weight:bolder;
+    color: aliceblue;
+}
+
+.icon-align {
+    color:#f85032;
+    position: relative;
+  /* Adjust these values accordingly */
+  top: 3px;
+  left: 5px;
+  right: 5px;
+  font-size: 25px;
+  margin-right: 5px;
+}
+/*
+.ion-checkbox {
+    color: aqua;
+}
+*/
+.nav-bar-block .bar {
+    font-family: 'Oswald', sans-serif !important; text-transform: uppercase !important;
+    /*background-color:#002576 !important; el color de la barra*/
+    color:white; /* el color de la fuente*/
+}
+
+.btn_reservas {
+  margin: 16px;
+  background-color:#e1314a;
+  color: white;
+  font-family: 'Oswald';
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  font-weight: normal;
+}
+
+.toggle_edit{
+  color:#20182c !important;
+  font-family: 'Oswald' !important;
+  /*font-family: 'Source Sans Pro' !important;*/
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 16px !important;
+  }
+.btn_publicar {
+  font-family:'Oswald' !important;
+  font-weight:normal;
+  background-color: #e1314a !important;
+}
+.txt_buscar{
+  color:#20182c !important;
+  font-family: 'Source Sans Pro' !important;
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 16px !important;
+  padding-top: 10px;
+  }

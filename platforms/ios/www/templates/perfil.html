@@ -1,0 +1,271 @@
+<ion-view view-title="Perfil" ng-style="{'background-color':white}">
+     <ion-nav-title>
+        <span style="color:white">Perfil</span>
+    </ion-nav-title>
+<ion-content style="background-color:#1b1425">
+ <div class="list card grad-negro">
+
+     <div class="item item-body" style="padding-bottom:0px">
+         <img class="full-image" ng-src="{{perfilb.profile_img}}">
+         <!-- <img class="full-image" src="img/profilec.png"> -->
+         <div id="footer-inside">
+            <p class="text-center footer-title">{{perfilb.user.first_name}}</p>
+        </div>
+     </div>
+     <div class="item item-body" style="padding: 0px">
+       <div class = "row perfil text-center">
+          <div class = "col col1">
+               <div>
+                    <a>Género</a>
+                    <h2>{{perfilb.genero}}</h2>
+                </div>
+          </div>
+          <div class = "col col2">
+               <div>
+                    <a>Edad</a>
+                    <h2>{{perfilb.edad}}</h2>
+                </div>
+          </div>
+          <div class = "col col3">
+               <div>
+                <a>Altura</a>
+                <h2>{{perfilb.altura}}</h2>
+               </div>
+          </div>
+          <div class = "col col4">
+               <div>
+                <a>Peso</a>
+                <h2>{{perfilb.peso}}</h2>
+               </div>
+          </div>
+        </div>
+     </div>
+     <div class="item item-body text-center">
+        <h2>WORKOUTS</h2>
+        <div class="row workout">
+            <div class="col col1b">
+                <div>
+                    <a>Fran</a>
+                    <h2>{{perfilb.fran}}</h2>
+                </div>
+            </div>
+            <div class="col col2b">
+                <div>
+                    <a>Helen</a>
+                    <h2>{{perfilb.helen}}</h2>
+                </div>
+            </div>
+            <div class="col col3b">
+                <div>
+                    <a>Grace</a>
+                    <h2>{{perfilb.grace}}</h2>
+                </div>
+            </div>
+           <div class="col col4b">
+                <div>
+                    <a>Filthy 50</a>
+                    <h2>{{perfilb.filthy}}</h2>
+               </div>
+            </div>
+        </div>
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a style="font-size:13.25px">Fight Gone Bad</a>
+                    <h2>{{perfilb.fight_gone_bad}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Sprint 400m</a>
+                    <h2>{{perfilb.sprint}}</h2>
+                </div>
+            </div>
+        <div class="col col7b">
+                <div>
+                    <a>Run 5k</a>
+                    <h2>{{perfilb.run}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <h2>MAXES</h2>
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>Deadlift</a>
+                    <h2>{{perfilb.deadlift}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Back Squat</a>
+                    <h2>{{perfilb.back_squat}}</h2>
+                </div>
+            </div>
+            <div class="col col7b">
+                <div>
+                    <a>Front Squat</a>
+                    <h2>{{perfilb.front_squat}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>OHS</a>
+                    <h2>{{perfilb.ohs}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Snatch</a>
+                    <h2>{{perfilb.snatch}}</h2>
+                </div>
+            </div>
+            <div class="col col7b">
+                <div>
+                    <a>Clean</a>
+                    <h2>{{perfilb.clean}}</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>Clean & Jerk</a>
+                    <h2>{{perfilb.clean_jerk}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Press</a>
+                    <h2>{{perfilb.press}}</h2>
+                </div>
+            </div>
+            <div class="col col7b">
+                <div>
+                    <a>Push Press</a>
+                    <h2>{{perfilb.push_press}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>Bench Press</a>
+                    <h2>{{perfilb.bench_press}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>Thrusters</a>
+                    <h2>{{perfilb.thrusters}}</h2>
+                </div>
+            </div>
+            <div class="col col7b">
+                <div>
+                    <a>Pull Ups</a>
+                    <h2>{{perfilb.max_pull_ups}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>C2B</a>
+                    <h2>{{perfilb.c2b}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>T2B</a>
+                    <h2>{{perfilb.t2b}}</h2>
+                </div>
+            </div>
+            <div class="col col7b">
+                <div>
+                    <a>M.U.</a>
+                    <h2>{{perfilb.mu}}</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row workout">
+            <div class="col col5b">
+                <div>
+                    <a>B.M.U.</a>
+                    <h2>{{perfilb.bmu}}</h2>
+                </div>
+            </div>
+            <div class="col col6b">
+                <div>
+                    <a>HSPU</a>
+                    <h2>{{perfilb.hspu}}</h2>
+                </div>
+            </div>
+            <div class="col col7b">
+                <div>
+                    <a>HSW</a>
+                    <h2>{{perfilb.hsw}}</h2>
+                </div>
+            </div>
+        </div>
+
+     </div>
+    <div class="item item-body text-center">
+            <h2>CUOTAS</h2>
+            <div class="row workout">
+            <div class="col cuotas">
+                <div>
+                    <a>Fecha de vencimiento</a>
+                    <h2>{{perfilb.fecha_vencimiento}}</h2>
+                </div>
+            </div>
+            <div class="col cuotas">
+                <div>
+                    <a>Estado de cuenta</a>
+                    <h2>{{perfilb.estado_cuenta}} Gs.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item item-body text-center">
+        <a href="#/app/editar_perfil" style="text-decoration: none">
+            <h2 class="botones" style="background-color:#f85032">Editar Perfil</h2>
+       </a>
+    </div>
+
+    <div class="item item-body text-center">
+        <a href="#/app/mis_publicaciones" style="text-decoration: none">
+            <h2 class="botones" style="background-color:#f85032">Mis publicaciones</h2>
+        </a>
+    </div>
+
+    <div class="item item-body text-center">
+        <a href="#" style="text-decoration: none">
+            <h2 class="botones" style="background-color:#f85032" ng-click="logout()">Cerrar Sesión</h2>
+        </a>
+    </div>
+
+
+</div>
+
+</ion-content>
+</ion-view>
+
+ <!--  <body class="padding" ng-controller="perfilCtrl">
+    <button class="button button-dark" ng-click="showPopup()">
+      show
+    </button>
+
+    <script id="popup-template.html" type="text/ng-template">
+      <input ng-model="data.wifi" type="text" placeholder="Password">
+    </script>
+  </body>
+    -->

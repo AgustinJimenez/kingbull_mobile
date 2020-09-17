@@ -1,0 +1,48 @@
+<ion-view view-title="Editar Publicacion">
+    <ion-nav-title>
+        <span style="color:white">Editar publicacion</span>
+    </ion-nav-title>
+<ion-content style="background-color:#1b1425">
+  <div class="list card grad-negro">
+    <form name="myForm" novalidate>
+      <div class="item item-body" style="padding: 0px">
+         <div class="item item-body" style="padding-bottom:0px">
+          <img class="full-image" src="{{ mispub.publi_img }}">
+          <div class="button-bar">
+            <a class="button button-block button-assertive" ng-click="takePicture();">Tomar foto</a>
+            <a class="button button-block button-assertive" ng-click="selectPicture()">Elegir foto</a>
+          </div>
+          <div ng-show="picData" class="item item-image">Foto tomada
+          <img id="myImage" class="item" ng-src="{{picData}}" style="width: 100%;"/>
+          <a class="button button-block button-positive" ng-click="uploadPicture()">Actualizar</a>
+          <a class="button button-block button-assertive" ng-click="delPhoto()">Cancelar</a>
+          </div>
+         </div>
+         <div class="list">
+              <input type="hidden" value="{{pub_id}}" ng-model="mispub.id" required>
+              <label class="item item-input">
+                <a class="input-label">Titulo</a>
+                <input type="text" value="{{mispub.titulo}}" ng-model="mispub.titulo" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Resumen</a>
+                <input type="text"  value="{{mispub.resumen}}" ng-model="mispub.resumen" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Contenido</a>
+                <input type="text" value="{{mispub.contenido}}" ng-model="mispub.contenido" required>
+              </label>
+         </div>
+      </div>
+
+      <div class="item item-body text-center">
+        <a href="" style="text-decoration: none">
+            <h2 class="botones" style="background-color:#f85032" ng-disabled="myForm.$invalid" ng-click="update(mispub)">Actualizar</h2>
+       </a>
+      </div>
+
+    </form>
+
+  </div>
+</ion-content>
+</ion-view>

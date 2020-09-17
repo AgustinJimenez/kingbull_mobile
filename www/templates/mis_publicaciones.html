@@ -1,0 +1,55 @@
+<ion-view cache-view="false" view-title="Mis publicaciones">
+     <ion-nav-title>
+        <span style="color:white">Mis publicaciones</span>
+    </ion-nav-title>
+    <ion-content class="grad-negro">
+        <ion-list>
+          <ion-item ng-repeat="list in mispub"  style="background-color:#1b1425" >
+            <div class="list card grad-negro">
+                <div class="item item-avatar">
+                    <img src="{{list.profile_img}}">
+                    <p>{{list.created_at}}</p>
+                </div>
+                <div class="item item-body">
+                    <img class="full-image" src="{{list.publi_img}}">
+                    <p>
+                    {{list.contenido}}
+                    </p>
+                    <p>
+                        <a href="" style="text-decoration: none">
+                            <h2 class="botones" style="background-color:#f85032" ng-click="eliminar($index, {{list.id}})">Eliminar</h2>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+          </ion-item>
+        </ion-list>
+        <ion-infinite-scroll
+            ng-if="!moredata"
+            icon="ion-loading-c"
+            on-infinite="loadMoreData()"
+            distance="1%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>
+
+<!--
+
+<ion-view view-title="Chats">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+-->

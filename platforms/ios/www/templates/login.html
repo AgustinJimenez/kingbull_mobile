@@ -1,0 +1,19 @@
+<ion-view view-title="Login">
+  <ion-content class="padding" style="margin-top:50%;">
+      <form name="myForm" novalidate>
+        <div class="list list-inset">
+          <label class="item item-input">
+            <span class="input-label">Email</span>
+            <input type="email" ng-model="loginData.username" required>
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Contraseña</span>
+            <input type="password" ng-model="loginData.password" required>
+          </label>
+          <label class="item">
+            <button ng-disabled="myForm.$invalid" class="button button-block button-assertive" ng-click="login(loginData)">Ingresar</button>
+          </label>
+        </div>
+      </form>
+  </ion-content>
+</ion-view>

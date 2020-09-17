@@ -1,0 +1,212 @@
+<ion-view view-title="Perfil">
+    <ion-nav-title>
+        <span style="color:white">Perfil</span>
+    </ion-nav-title>
+<ion-content style="background-color:#1b1425">
+ <div class="list card grad-negro">
+
+     <div class="item item-body" style="padding-bottom:0px">
+        <!--<img class="full-image" src="{{perfil.foto}}">-->
+         <img ng-show="profileImg" class="full-image" src="{{ perfilb.profile_img }}">
+         <img ng-show="newImg" id="newImg" class="full-image" ng-src="{{img_up}}" style="width: 100%;">
+         <div class="footer-title text-center">
+
+            <div class="button-bar">
+                <a class="button button-block button-assertive" ng-click="takePicture();">Cámara</a>
+                <a class="button button-block button-assertive" ng-click="selectPicture()">Galería</a>
+            </div>
+            <div ng-show="picData" class="item item-image">Foto tomada
+              <img id="myImage" class="item" ng-src="{{picData}}" style="width: 100%;"/>
+              <a class="button button-block button-positive" ng-click="uploadPicture()">Elegir</a>
+              <a class="button button-block button-assertive" ng-click="delPhoto()">Cancelar</a>
+            </div>
+
+        </div>
+     </div>
+     <form name="myForm" novalidate>
+     <div class="item item-body" style="padding: 0px">
+         <div class="list">
+             <label class="item item-input">
+                <a class="input-label">Nombre</a>
+                <input type="text" value="{{perfilb.user.first_name}}" ng-model="perfilb.user.first_name" required>
+              </label>
+             <label class="item item-input">
+                <a class="input-label">Género</a>
+                <input type="text"  value="{{perfilb.genero}}" ng-model="perfilb.genero" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Edad</a>
+                <input type="text" value="{{perfilb.edad}}" ng-model="perfilb.edad" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Altura</a>
+                <input type="text" value="{{perfilb.altura}}" ng-model="perfilb.altura" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Peso</a>
+                <input type="text" value="{{perfilb.peso}}" ng-model="perfilb.peso" required>
+              </label>
+         </div>
+     </div>
+
+      <div class="item item-body">
+         <h2>WORKOUTS</h2>
+         <div class="list">
+              <label class="item item-input">
+                <a class="input-label">Fran</a>
+                <input type="text" value="{{perfilb.fran}}" ng-model="perfilb.fran" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Helen</a>
+                <input type="text" value="{{perfilb.helen}}" ng-model="perfilb.helen" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Grace</a>
+                <input type="text" value="{{perfilb.grace}}" ng-model="perfilb.grace" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Filthy 50</a>
+                <input type="text" value="{{perfilb.filthy}}" ng-model="perfilb.filthy" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Fight Gone Bad</a>
+                <input type="text" value="{{perfilb.fight_gone_bad}}" ng-model="perfilb.fight_gone_bad" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Sprint 400m</a>
+                <input type="text" value="{{perfilb.sprint}}" ng-model="perfilb.sprint" required>
+              </label>
+              <label class="item item-input">
+                <a class="input-label">Run 5k</a>
+                <input type="text" value="{{perfilb.run}}" ng-model="perfilb.run" required>
+              </label>
+
+         </div>
+     </div>
+
+     <div class="item item-body">
+         <h2>MAXES</h2>
+
+        <div class="list">
+          <label class="item item-input">
+            <a class="input-label">Deadlift</a>
+            <input type="text" value="{{perfilb.deadlift}}" ng-model="perfilb.deadlift" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Back Squat</a>
+            <input type="text" value="{{perfilb.back_squat}}" ng-model="perfilb.back_squat" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Front Squat</a>
+            <input type="text" value="{{perfilb.front_squat}}" ng-model="perfilb.front_squat" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">OHS</a>
+            <input type="text" value="{{perfilb.ohs}}" ng-model="perfilb.ohs" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Snatch</a>
+            <input type="text" value="{{perfilb.snatch}}" ng-model="perfilb.snatch" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Clean</a>
+            <input type="text" value="{{perfilb.clean}}" ng-model="perfilb.clean" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Clean & Jerk</a>
+            <input type="text" value="{{perfilb.clean_jerk}}" ng-model="perfilb.clean_jerk" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Press</a>
+            <input type="text" value="{{perfilb.press}}" ng-model="perfilb.press" required>
+          </label>
+          <label class="item item-input">
+            <a class="input-label">Push Press</a>
+            <input type="text" value="{{perfilb.push_press}}" ng-model="perfilb.push_press" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">Bench Press</a>
+            <input type="text" value="{{perfilb.bench_press}}" ng-model="perfilb.bench_press" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">Thrusters</a>
+            <input type="text" value="{{perfilb.thrusters}}" ng-model="perfilb.thrusters" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">Pull Ups</a>
+            <input type="text" value="{{perfilb.max_pull_ups}}" ng-model="perfilb.max_pull_ups" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">C2B</a>
+            <input type="text" value="{{perfilb.c2b}}" ng-model="perfilb.c2b" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">T2B</a>
+            <input type="text" value="{{perfilb.t2b}}" ng-model="perfilb.t2b" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">M.U.</a>
+            <input type="text" value="{{perfilb.mu}}" ng-model="perfilb.mu" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">B.M.U</a>
+            <input type="text" value="{{perfilb.bmu}}" ng-model="perfilb.bmu" required>
+          </label>
+
+          <label class="item item-input">
+            <a class="input-label">HSPU</a>
+            <input type="text" value="{{perfilb.hspu}}" ng-model="perfilb.hspu" required>
+          </label>
+          
+          <label class="item item-input">
+            <a class="input-label">HSW</a>
+            <input type="text" value="{{perfilb.hsw}}" ng-model="perfilb.hsw" required>
+          </label>
+
+        </div>
+     </div>
+
+      <div class="item item-body text-center">
+        <a href="" style="text-decoration: none">
+            <h2 class="botones" style="background-color:#f85032" ng-disabled="myForm.$invalid" ng-click="showb(perfilb)">Guardar</h2>
+       </a>
+     </div>
+
+     </form>
+
+</div>
+
+
+</ion-content>
+</ion-view>
+
+
+ <!--
+ <p>Nombre: <input type="text" ng-model="perfilb.nombre" required /></p>
+ <p>Apellido: <input type="text" name="apellido" ng-model="perfilb.apellido" required /></p>
+ <input type="button" ng-click="showb()" value="Object To JSON" />
+     -->
+
+<!--
+      <p>First Name: <input type="text" name="firstName" ng-model="user.firstName" required /></p>
+ <p>Last Name: <input type="text" name="lastName" ng-model="user.lastName" required /></p>
+ <input type="button" ng-click="showJson()" value="Object To JSON" />
+
+
+
+Boton que muestra en consola lo que esta escrito en scope.message del controlador
+<button ng-click="$log.log(message)">log</button>
+-->
+
+   <!-- <p>First Name: <input type="text" name="firstName" ng-model="firstName" required /></p>
+    <p>Last Name: <input type="text" name="lastName" ng-model="lastName" required /></p>
+    <button ng-click="addRowAsyncAsJSON()">Submit</button>
+    <hr />
+-->

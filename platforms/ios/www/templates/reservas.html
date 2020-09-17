@@ -1,0 +1,51 @@
+<ion-view view-title="Reservas">
+    <ion-nav-title>
+        <span style="color:white">Reservas</span>
+    </ion-nav-title>
+  <ion-content style="background-color:#1b1425">
+
+      <div class="list list-inset">
+        <div class="item" ng-repeat="dia in dias">
+        
+          <div class="row">
+
+            <div class="col col-33 col-offset-10">
+              <h2> {{ dia.nombre_dia }}  </h2>
+            </div>
+
+            <div class="col col-10 ">
+              <h2> {{ dia.fecha_dia }}  </h2>
+            </div>
+
+            <div class="col col-10 col-offset-10">
+
+              <div ng-if="dia.reservado == false">
+                <button class="button" style="background-color:#4a3766; color:white;" ng-click="button_horarios_was_clicked( dia );">
+                  Horarios
+                </button>
+              </div>
+
+              <div ng-if="dia.reservado == true">
+                <button class="button" style="background-color:#4c9b00; color:white; font-size:0.8em;" ng-click="eliminar_reserva_del_dia( dia );">
+                  {{dia.hora_reserva}}
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!--DEBUG
+      <pre ng-bind="reservas | json"></pre>
+      </div>
+      -->
+
+  </ion-content>
+</ion-view>
+<!--
+<input type="button" ng-click="showJson()" value="Object To JSON" />
+/*-->

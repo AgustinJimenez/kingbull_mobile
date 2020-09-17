@@ -1,0 +1,55 @@
+<ion-view  view-title="Usuarios">
+    <ion-nav-title>
+       <!-- <span style="color:white">Usuarios</span> -->
+        <label class="item item-input" style="background:#1F1825">
+            <i class="icon ion-ios-search-strong placeholder-icon" style="font-size:24px;color:white;padding-left:0px;padding-right:0px"></i>
+            <!-- <input type="search" style="color:whitesmoke;padding-left:8px"> -->
+        </label>
+    </ion-nav-title>
+    <ion-content>
+
+      <label class="item item-input">
+        <!-- <span class="input-label">Buscar</span> -->
+        <input type="search" placeholder="Buscar contacto..." ng-model="search">
+      </label>
+
+      <ion-list>
+          <ion-item class="item-remove-animate item-avatar item-icon-right chat-item" collection-repeat="list in usuarios_lista | orderBy:'list.user.first_name' | searchContacts:search" type="item-text-wrap" href="#/app/usuarios_lista/{{list.user.id}}">
+          <img src="{{list.profile_img}}">
+          <h2 class="txt_buscar">{{list.user.first_name}}</h2>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+          </ion-item>
+
+      </ion-list>
+    </ion-content>
+</ion-view>
+
+
+
+
+<!--
+<ion-view view-title="Mis publicaciones">
+     <ion-nav-title>
+        <span style="color:white">Mis publicaciones</span>
+    </ion-nav-title>
+    <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="list in mis_pub"  style="background-color:#1b1425">
+        <div class="list card grad-negro">
+            <div class="item item-avatar">
+                <img src="img/profilec.png">
+                <h2>{{list.usuario.nombre}}</h2>
+                <p>{{list.fecha}}</p>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" src="img/ocross.jpg">
+                <p>
+                {{list.descripcion}}
+                </p>
+            </div>
+        </div>
+
+      </ion-item>
+    </ion-list>
+    </ion-content>
+</ion-view>

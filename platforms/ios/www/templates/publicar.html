@@ -1,0 +1,49 @@
+<ion-view title="Publicar">
+    <ion-nav-title>
+        <span style="color:white">Publicar</span>
+    </ion-nav-title>
+  <ion-content style="background-color:#1b1425">
+    <div class="list card grad-negro">
+
+        <div class="item i tem-body" style="padding-bottom:0px">
+            <!-- <img id="newImg" ng-show="newImg" class="full-image" ng-src="{{img_up}}"> -->
+            <div ng-show="picData">
+                <img id="myImage" class="ull-image" ng-src="{{picData}}" style="width: 100%;"/>
+                <a class="button button-block button-assertive" ng-click="delPhoto()">Cancelar</a>
+            </div>
+
+                <div class="footer-title text-center">
+                  <div class="button-bar">
+                    <a class="button button-block button-assertive btn_publicar" ng-click="takePicture();">Cámara</a>
+                    <a class="button button-block button-assertive btn_publicar" ng-click="selectPicture()">Galería</a>
+                  </div>
+                  <!-- <div ng-show="picData" class="item item-image">Foto tomada
+                      <img id="myImage" class="item" ng-src="{{picData}}" style="width: 100%;"/>
+                      <a class="button button-block button-positive" ng-click="elegir()">Usar Imagen</a>
+                      <a class="button button-block button-assertive" ng-click="delPhoto()">Cancelar</a>
+                  </div> -->
+                </div>
+        </div>
+        <div class="item item-body">
+            <div class="list">
+                   <label class="item item-input">
+                    <textarea rows="10" name="contenido" id="contenido"
+                        ng-model="mispub.contenido" placeholder="Escriba aquí el contenido de su publicación" required>
+                    </textarea>
+                  </label>
+            </div>
+        </div>
+
+
+    <div class="item item-body text-center">
+        <a href="" style="text-decoration: none">
+            <h2 class="botones btn_publicar" ng-click="uploadPicture(mispub)">PUBLICAR</h2>
+       </a>
+    </div>
+
+    </div>
+
+    <!-- </div> -->
+
+  </ion-content>
+</ion-view>
